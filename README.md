@@ -1,0 +1,2 @@
+# What-Language-is-this-
+This is a basic web app that can identify languages given as input. The language Identifier uses a Neural Network trained using the Europarl Dataset and Tatoeba dataset as for the preliminary studies. Particularly we will be using trigrams for this project. That is 3 consequtive words that occur in the language. As suggested by many literary works n-grams are a very efficient way to identify the language
