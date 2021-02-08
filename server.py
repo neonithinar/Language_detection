@@ -46,7 +46,7 @@ def home():
 def predict():
     # render the results from HTML GUI
     # Get the data from the POST request.
-    data =str(request.form.values())
+    data =request.form["input_text"]
     data = data.lower()
     data = data.replace(r'[^\w\s]+', '')
     data = [data]
