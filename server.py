@@ -11,22 +11,6 @@ with open('vectorizer.pkl', 'rb') as f:
     vectorizer_loaded = pickle.load(f)
 
 
-def preprocess_input(text):
-    data = text
-    # data = pd.DataFrame(data)
-    # df_predict = pd.DataFrame(data, columns=["text"])
-    # df_predict["text"] = df_predict["text"].str.lower()
-    # df_predict["text"] = df_predict['text'].str.replace(r'[^\w\s]+', '')
-    data = data.lower()
-    data = data.replace(r'[^\w\s]+', '')
-    data = [data]
-
-    X = vectorizer_loaded.fit_transform(data)
-    feature_names = vectorizer_loaded.get_feature_names()
-    predict_features = pd.DataFrame(data=X.toarray(), columns=feature_names)
-    return predict_features
-
-
 predicted_lang = ["arabic", "czech", "danish", "finnish", "lithuanian", "macedonian",
                   "dutch", "polish", "serbian", "swedish"]
 
