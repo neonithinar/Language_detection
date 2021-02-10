@@ -13,6 +13,12 @@
 
 **How to Use**  <img src="https://media.giphy.com/media/TKXabSgn2ouV8vmTue/giphy.gif" width="65px">
 
+* Clone this repo
+* Run _server.py_ from your terminal
+* Copy the url on port 5000 in the output in your browser to run the web app locally
+* Give a language string you need to identify in the input field
+* Check the obtained Result !
+
 * Language Identification Project preliminary try out.ipynb
     Notebook to generate model to categorize the language. Originally trained on Tatoeba dataset ( alhough originally comprised of 300+ languages, I'm inclined to use a subset of the original languages
 * Europarl Language Detection.ipynb
