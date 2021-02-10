@@ -5,13 +5,13 @@
 </p>
 
 <!-- Welcome Message -->
-<h1>Language Identifier <img src="https://media.giphy.com/media/nQjrA94PBUX9ssj9QU/giphy.gif" width="25px"></h1>
+<h1>Language Identifier <img src="https://media.giphy.com/media/nQjrA94PBUX9ssj9QU/giphy.gif" width="65px"></h1>
 
-<h3>A basic web app to Identify the language using language trigrams in neural network</h3>
+<h3>A basic web app to Identify the language using Character trigrams and neural network</h3>
 
 
 
-**Files in this Notebook**
+**How to Use**  <img src="https://media.giphy.com/media/TKXabSgn2ouV8vmTue/giphy.gif" width="65px">
 
 * Language Identification Project preliminary try out.ipynb
     Notebook to generate model to categorize the language. Originally trained on Tatoeba dataset ( alhough originally comprised of 300+ languages, I'm inclined to use a subset of the original languages
