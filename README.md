@@ -5,42 +5,11 @@
 </p>
 
 <!-- Welcome Message -->
-<h2>Language Identifier <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"></h2>
+<h1>Language Identifier <img src="https://media.giphy.com/media/nQjrA94PBUX9ssj9QU/giphy.gif" width="25px"></h1>
 
 <h3>A basic web app to Identify the language using language trigrams in neural network</h3>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-This is a basic web app that can identify languages given as input. The language Identifier uses a Neural Network trained using the Europarl Dataset and Tatoeba dataset as for the preliminary studies. 
-
-As I understand, Language identification would be the first step in classical language translation. So it must be done with least latency and most efficiently. So the problem is to create a model that would identify the input language with least amount of processing time. Preferably it should run in the web browser itself. (we'll see how that goes). As of starting out this project I have no idea about how RNNs or NLP work. Everything you see here is learnt on the go. So please forgive my crude code.
 
 **Files in this Notebook**
 
