@@ -19,6 +19,8 @@
 * Give a language string you need to identify in the input field
 * Check the obtained Result !
 
+
+**Files in the Repository**
 * Language Identification Project preliminary try out.ipynb
     Notebook to generate model to categorize the language. Originally trained on Tatoeba dataset ( alhough originally comprised of 300+ languages, I'm inclined to use a subset of the original languages
 * Europarl Language Detection.ipynb
