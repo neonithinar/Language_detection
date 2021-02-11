@@ -11,20 +11,27 @@
 
 
 
-**How to Use**  <img src="https://media.giphy.com/media/TKXabSgn2ouV8vmTue/giphy.gif" width="65px">
+**How to Use**  
 
 * Clone this repo
 * Run _server.py_ from your terminal
-* Copy the url on port 5000 in the output in your browser to run the web app locally
+* Copy the url in the output in your browser to run the web app locally
 * Give a language string you need to identify in the input field
 * Check the obtained Result !
 
 
-**Files in the Repository**
-* Language Identification Project preliminary try out.ipynb
-    Notebook to generate model to categorize the language. Originally trained on Tatoeba dataset ( alhough originally comprised of 300+ languages, I'm inclined to use a subset of the original languages
-* Europarl Language Detection.ipynb
-  Notebook was trained on Europarl dataset. Oh.. the horror :( The dataset hosting servers are unforgiving. Since I am training the model with colab, using !wget to download the dataset takes for ever!. Downloading this 1.5GB data took me days! THE NOTEBOOK IS INCOMPLETE as of now. I was in the middle of cleaning the dataset when I found the Tatoeba dataset. With over 2 milliion sentences for each of the 20 languages, the Europarl dataset is a bit too much for language categorization.
+**How this works ??** <img src="https://media.giphy.com/media/TKXabSgn2ouV8vmTue/giphy.gif" width="40px">
+
+* The string given to the input form is passed on to a pretrained Neural network model (model_1.h5) after cleaning. 
+* The model outputs a set of probabilities from which the most probable language is returned to the web application as the prediction
+
+**Modelling and Training**
+
+* The model was trained on the [Tatoeba dataset](https://downloads.tatoeba.org/exports/sentences.csv) which contains over 300 languages
+* After cleaning the dataset, The most common <h3>Language Trigrams<h3> were extracted from each of the languages, and a vocabulary for each language was created from the training set based on which the whole training, validation and test set were transformed using ```sklearn.CountVectorizer ``` 
+	
+* 
+
 
 **Techniques and Methods Used**
 
