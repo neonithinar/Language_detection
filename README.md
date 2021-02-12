@@ -30,9 +30,9 @@
 * An N-gram is an N-character slice of a longer string. Although in the literature the term can include the notion of any co-occurring set of characters in a string (e.g., an N-gram made up of the first and third character of a word), in this
 project we use the term for contiguous slices only. Typically, we will be using <h5>character trigrams<h5> 
 * eg; the word ```TEXT``` will become ```_TE, TEX, EXT, XT_, T_ _``` (begining and end of the word is padded with white space)
-* The idea is to identify <h5>Character Trigrams<h5> unique to each language and use them to classify the languages
+* The idea is to identify *Character Trigrams* unique to each language and use them to classify the languages
 * The model was trained on the [Tatoeba dataset](https://downloads.tatoeba.org/exports/sentences.csv) which contains over 300 languages
-* After cleaning the dataset, The most common <h3>Language Trigrams<h3> were extracted from each of the languages, and a vocabulary for each language was created from the training set based on which the whole training, validation and test set were transformed using ```sklearn.CountVectorizer ``` 
+* After cleaning the dataset, The most common *Language Trigrams* were extracted from each of the languages, and a vocabulary for each language was created from the training set based on which the whole training, validation and test set were transformed using ```sklearn.CountVectorizer ``` 
 	
 * These extracted features were fed to a simple feedforward Neural network with 3 hidden layers to classify the languages.
 * ```Early stopping``` and ```model checkpoint```  callbacks to prevent overfitting of the model
