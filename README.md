@@ -24,7 +24,7 @@
 
 * The string given to the input form is passed on to a pretrained Neural network model (model_1.h5) after cleaning. 
 * The model outputs a set of probabilities from which the most probable language is returned to the web application as the prediction
-* **[Checkout my 5 min discription on youtube ](https://youtu.be/PBPjTO-yTdQ)**
+* **[Checkout my 5 min discription of the project on youtube here... ! ](https://youtu.be/PBPjTO-yTdQ)**
 
 **N-gram based Language Detection Model**
 
